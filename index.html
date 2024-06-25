@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Diri</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e4b7b7;
+            color: #000000;
+        }
+
+        /* Efek hover untuk tombol */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00ff22;
+            color: #140606;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #f7f7f7;
+        }
+
+        /* Layout menggunakan teknik flexbox */
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            flex-shrink: 0;
+        }
+
+        header nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin-right: 20px;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .content aside {
+            margin-bottom: 20px;
+        }
+
+        .contact-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .contact-buttons li {
+            margin: 10px;
+        }
+
+        .profile-img-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile-img {
+            width: 40%; /* Sesuaikan dengan kebutuhan Anda */
+        }
+    </style>
+</head>
+<body class="container">
+    <header>
+        <h1>Profile Diri</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#curriculum">Curriculum</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="profile-img-container">
+            <img src="img_salman.jpg" alt="profile-img" class="profile-img">
+        </div>
+        <article> <!-- Menambahkan elemen article -->
+            <section id="home">
+                <div class="content">
+                    <h2>Muhammad Salman Abdurohman</h2>
+                    <h3>Mahasiswa Teknik Elektro Universitas Lampung</h3>
+                    <p>Mahasiswa Teknik Elektro Universitas Lampung yang berfokus, ahli, dan profesional pada Frontend maupun Backend developer</p>
+                    <a href="#about" class="btn">Lihat Profil Lengkap</a>
+                </div>
+            </section>
+        </article>
+        <aside>
+            <center>
+            <h2>Gambar Profil</h2>
+            <img src="img_aku.jpg" alt="gambar-profile" width="20%">
+        </center>
+        </aside>
+        <article> <!-- Menambahkan elemen article -->
+            <section id="about">
+                <div class="content">
+                    <h2>Tentang Saya</h2>
+                    <p>Assalamualaikum warahmatullahi wabarakatuh halo semuanya namaku Muhammad Salman Abdurohman. Aku orang asli bandar Lampung sejak lahir dan sampai sekarang masih di bandar Lampung karena aku juga berkuliah di Universitas Lampung yang merupakan salah satu Universitas terbesar di provinsi Lampung dan juga termasuk salah satu universitas terbaik di Indonesia. Aku dari jurusan Teknik Elektro Universitas Lampung. Aku punya lebih dari 5000 pengikut di Instagram dan aku termasuk orang yang cukup disukai oleh seluruh teman-teman yang mengenalku karena aku adalah orang yang ramah.</p>
+                    <p>Untuk hobiku ada banyak sekali terutama di bidang agama dan Alquran di luar dari itu aku juga memiliki hobi berolahraga salah satunya adalah berlari berenang, dan working out. Aku juga sangat suka mendengarkan bacaan Alquran karena dengan itu semoga kelak aku mendapatkan syafaat dari apa yang aku lakukan selama ini di waktu muda. Oleh karena itu jangan lupa baca bismillah ya sebelum lanjut ke profilku selanjutnya. Terima kasih semuanya ✨</p>
+                    <a href="#curriculum" class="btn" onclick="scrollToCurriculum()">Lihat CV Saya</a>
+                </div>
+            </section>
+        </article>
+
+        <article> <!-- Menambahkan elemen article -->
+            <section id="curriculum">
+                <div class="content curriculum">
+                    <h2>Curriculum Vintage</h2>
+                    <p>Untuk mengetahui sedikit banyak tentang diri saya mulai dari biodata singkat, prestasi, kemampuan, organisasi, kegiatan, jabatan kepemimpinan, dan lain sebainya dalam 5 tahun terakhir ini silahkan lihat pada Curriculum Vintage (CV) saya dibawah ini </p>
+                    <a href="https://drive.google.com/file/d/18f9dgpvSODNgtcEtQPFHN6nd2LKYtXRV/view?usp=drive_link" target="_blank" class="btn">Lihat CV Saya</a>
+                    <a href="#contact" class="btn" onclick="scrollToContact()">Hubungi Saya</a>
+                </div>
+            </section>
+        </article>
+
+        <article> <!-- Menambahkan elemen article -->
+            <section id="contact">
+                <div class="content">
+                    <h2>Kontak</h2>
+                    <p>Hubungi saya melalui...</p>
+                    <ul class="contact-buttons">
+                        <li><a href="https://www.instagram.com/m.salman.abd" target="_blank" class="btn-instagram">Instagram: m.salman.abd</a></li>
+                        <li><a href="https://wa.me/6282178452180/" target="_blank" class="btn-whatsapp">Whatsapp: +6282178452180</a></li>
+                        <li><a href="https://www.youtube.com/@salmanabdurohman21" target="_blank" class="btn-youtube">Youtube: salmanabdurohman21</a></li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>Salman TE UNILA 21</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const parallax = document.querySelectorAll('.parallax');
+            let scrollPosition = window.pageYOffset;
+            parallax.forEach(function(element) {
+                element.style.backgroundPositionY = scrollPosition * 0.7 + 'px';
+            });
+        });
+
+        function scrollToCurriculum() {
+            document.querySelector('#curriculum').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToContact() {
+            document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
